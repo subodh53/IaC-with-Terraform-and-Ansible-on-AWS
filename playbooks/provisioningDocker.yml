@@ -1,0 +1,9 @@
+---
+- name: This roles will install Docker on EC2 Instance on AWS
+  hosts: all
+  become: true
+  gather_facts: false
+  remote_user: ubuntu
+  roles:
+    - docker
+...
